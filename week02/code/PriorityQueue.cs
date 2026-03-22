@@ -22,7 +22,7 @@
             throw new InvalidOperationException("The queue is empty.");
         }
 
-        var highPriorityIndex = 0;
+                var highPriorityIndex = 0;
         for (int index = 1; index < _queue.Count; index++)
         {
             if (_queue[index].Priority >= _queue[highPriorityIndex].Priority)
@@ -36,7 +36,6 @@
         return value;
     }
 
-    // DO NOT MODIFY THE CODE IN THIS METHOD
     // The graders rely on this method to check if you fixed all the bugs, so changes to it will cause you to lose points.
     public override string ToString()
     {
