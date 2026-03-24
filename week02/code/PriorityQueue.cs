@@ -22,10 +22,10 @@
             throw new InvalidOperationException("The queue is empty.");
         }
 
-                var highPriorityIndex = 0;
+        var highPriorityIndex = 0;
         for (int index = 1; index < _queue.Count; index++)
         {
-            if (_queue[index].Priority >= _queue[highPriorityIndex].Priority)
+            if (_queue[index].Priority > _queue[highPriorityIndex].Priority)
             {
                 highPriorityIndex = index;
             }
